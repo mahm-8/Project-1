@@ -18,20 +18,23 @@ Buying(List<Map> listOfMap) {
       numCopies = int.parse(stdin.readLineSync()!);
       price = price * numCopies;
       totalcopies += numCopies;
-      finaPrice += price;
+
       buying.add({'name': name, 'copis': numCopies, 'price': price});
       print("do you want add other books: Y or N ?");
       var confirmPurchese = stdin.readLineSync()!.toLowerCase();
+      finaPrice += price;
+      totalPraice += price;
+      totalSoldBook += numCopies;
+      map['left'] -= numCopies;
 
       if (confirmPurchese == 'n') {
         buying.add(finaPrice);
-        totalPraice += price;
-        totalSoldBook += numCopies;
+
         purcheses.replaceRange(0, 2,
             ["Total Book Sold:  $totalSoldBook", "Total Price: $totalPraice "]);
-        map['left'] -= numCopies;
-        if (map['left'] == 0) {
+        if (map['left'] <= 0) {
           book.removeWhere((e) => e['left'] <= 0);
+          return;
         }
         break;
       }

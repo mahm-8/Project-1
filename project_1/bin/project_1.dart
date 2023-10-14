@@ -10,7 +10,7 @@ import 'reporting.dart';
 
 void main() {
   ShowBook showBook = ShowBook(libary);
-  SearchBook searchBook = SearchBook(libary: libary);
+  
   bool run = true;
   while (run) {
     print(
@@ -21,13 +21,13 @@ void main() {
         showBook.printBook();
         break;
       case '1':
-        searchBook.queryBook();
+      SearchBook().queryBook();
         break;
       case '2':
         addBook(libary);
         break;
       case '3':
-        RemoveBook(listOfMap: libary);
+        RemoveBook();
         break;
       case '4':
     UpdateBook().updateBook();
