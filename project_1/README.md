@@ -9,7 +9,7 @@ Library: The user can browse all books, search for a book, add books, modify and
 
 
 
-## Minimum Requirements:
+## Requirements:
 
 1.**Home Page**:
   Asking the user to specify what he needs from the library.
