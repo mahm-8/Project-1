@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'AddBook.dart';
 class ShowBook {
-  showBook() {
+  ShowBook(List libary);
+  printBook() {
     // used for loop to Specify name and ID
     for (Map element in libary) {
       String nameBook = element['name'];

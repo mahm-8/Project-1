@@ -9,6 +9,8 @@ import 'queryBook.dart';
 import 'reporting.dart';
 
 void main() {
+  ShowBook showBook = ShowBook(libary);
+  SearchBook searchBook = SearchBook(libary: libary);
   bool run = true;
   while (run) {
     print(
@@ -16,10 +18,10 @@ void main() {
     String? input = stdin.readLineSync();
     switch (input) {
       case '0':
-        ShowBook().showBook();
+        showBook.printBook();
         break;
       case '1':
-        SearchBook().queryBook(libary);
+        searchBook.queryBook();
         break;
       case '2':
         addBook(libary);
@@ -28,15 +30,15 @@ void main() {
         RemoveBook(listOfMap: libary);
         break;
       case '4':
-        UpdateBook();
+    UpdateBook().updateBook();
         break;
       case '5':
         Buying(libary);
         break;
-        case '6':
+      case '6':
         printInvoice();
         break;
-        case '7':
+      case '7':
         reporting();
         break;
       default:

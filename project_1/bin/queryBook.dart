@@ -1,7 +1,11 @@
 import 'dart:io';
+import 'AddBook.dart';
 
 class SearchBook {
-  queryBook(List<Map> libary) {
+  late List libary;
+  SearchBook({required this.libary});
+
+  queryBook() {
     print("input name the book or the author");
     String? input = stdin.readLineSync();
     // used to found the required ID and printed
@@ -25,7 +29,7 @@ class SearchBook {
     print("Do you want search for another book:\n Y or N?");
     var confirm = stdin.readLineSync()!.toLowerCase();
     if (confirm == 'y') {
-      queryBook(libary);
+      queryBook();
     }
   }
 }
