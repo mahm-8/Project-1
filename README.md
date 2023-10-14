@@ -5,79 +5,66 @@ Congratulations on reaching the project phase! This project will assess your abi
 
 ## Description:
 
-The "Library Project using Dart" is an exciting software application designed to efficiently manage a library's book inventory and streamline user interactions through a Command Line Interface (CLI). This capstone project provides you, as a student, with an excellent opportunity to apply your knowledge and skills in Flutter Development, showcasing your proficiency in Dart programming.
-
-The primary goal of the project is to develop a user-friendly and efficient CLI that caters to both library staff and patrons. With this CLI, users can effortlessly query books, view the number of available copies, add new books to the library, delete books from the inventory, make book purchases, and receive detailed invoices after each purchase. Additionally, the project demands an essential feature - updating the number of book copies after a purchase is made to maintain accurate inventory records.
-
-To begin, you will create a new Dart project, ensuring that the project structure is appropriately organized for a clean and manageable codebase. As you progress, it is crucial to write code that is clear, well-organized, and scalable, adhering to standard coding conventions to enhance code readability. Demonstrating your comprehensive understanding of programming concepts and techniques is essential for a successful outcome.
-
-Your CLI should allow users to search for books by title, author, or category, providing a straightforward and accessible way to retrieve information about the library's collection. Implementing a method to add new books to the library with the appropriate updates to the book count will further enhance the system's usability.
-
-Managing the library's inventory also involves implementing a method to delete books, ensuring smooth handling of cases where a book to be deleted does not exist. Facilitating book purchases through the CLI is another critical aspect, requiring you to decrease the number of book copies according to the books purchased and generate an informative invoice for the user.
-
-As an extra credit opportunity, you can implement features such as displaying all book categories in the library, returning a list of books belonging to a selected category. Additionally, providing a method to count the number of purchased books will further showcase your skills.
-
-The project must be written entirely in the Dart language and fully submitted through GitHub using version control (Git). Remember to create descriptive commits to showcase your progress and follow the provided guidelines for academic integrity.
+Library: The user can browse all books, search for a book, add books, modify and delete books, print the invoice.
 
 
 
 ## Minimum Requirements:
 
-1. **Project Structure**: Create a new Dart project and organize its structure appropriately. Set up the necessary folders, files, and ensure a clean and organized project layout.
-
-2. **Clean Code**: Write clear, well-organized, and scalable code. Use meaningful variable and function names, following standard coding conventions to improve code readability. Well-structured and easily maintainable code is essential.
-
-3. **Applying Concepts**: Demonstrate a comprehensive understanding of programming concepts and techniques. Implement the CLI features with efficiency and correctness.
-
-4. **Query Books**: Develop a simple CLI user interface that allows users to query books and view the number of available copies. Users should be able to search for books by title, author, or category.
-
-5. **Add New Book**: Provide a method to add a new book to the library and update the number of book copies accordingly. Ensure proper error handling for invalid inputs.
-
-6. **Delete Book**: Implement a method to delete a book from the library and update the book count. Handle cases where the book to be deleted does not exist.
-
-7. **Purchase**: Implement the purchase process, allowing users to buy books from the library. Ensure that the number of book copies is decreased according to the books purchased.
-
-8. **Invoice**: Display a detailed invoice after the purchase, showing the books purchased, their prices, and the total cost.
-
-9. **Editing Capability**: Add the ability to modify book data, such as title, author, and price. Users should be able to update book information easily.
-
-## Ideas for Extra Credit:
-
-- **Display all Book Categories**: Provide a method to display a list of all book categories in the library. When a category is selected, return a list of all books belonging to that category.
-- **Reporting:** Provide a method to present a report that contains the number of all purchased books from the library, and calculate their amount.
+1.**Home Page**:
+  Asking the user to specify what he needs from the library.
   
+  <img width="328" alt="Screenshot 2023-10-14 174712" src="https://github.com/mahm-8/Project-1/assets/141933812/8b4cdda9-57cd-4880-9c14-c663e299e68e">
 
-## Delivery Requirements:
+2. **Show books**:
+  1- On this page, the name of the books and the book ID will be printed.
+   
+    <img width="255" alt="Screenshot 2023-10-14 174825" src="https://github.com/mahm-8/Project-1/assets/141933812/58a9b86f-3ecb-42f6-b61a-723a15b016bd">
 
-- **Language**: The project should be written in Dart language.
 
-- **GitHub Submission**:
-   - Create a Fork from the exam’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the exam’s original repository containing your solution.
+3. **ٍSearch Book**:
+1- After entering the number, name, or classification of the book, the book’s details will be printed (name, author, price, classification, number of available copies). Then the user will be asked if he wants to search for other books.
+2-If the entry is wrong, a message will appear (sorry we can't founded (-_-)).
+    <img width="652" alt="Screenshot 2023-10-14 175920" src="https://github.com/mahm-8/Project-1/assets/141933812/bff32c18-8708-48e2-a728-fc4581dbee6a">
 
-- **README.md File**: Include a README.md file with instructions on how to run and test the project. This file should provide a clear guide for users to understand how to interact with the CLI.
 
-- **Screenshots**: Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
+6. **Add Book**:
+ 1- The user enters (ID number, book name, author name, price, classification, number of copies).
+ 2- The user is asked if he wants to add another book.
+   
+    <img width="325" alt="Screenshot 2023-10-14 180138" src="https://github.com/mahm-8/Project-1/assets/141933812/efd493cf-331e-45c4-b770-2ac75125dede">
 
-## Schedule & Deadlines:
 
-- Exam Start Date: 12/10/2023 - 3:00 PM
-- Exam Submission Deadline: 15/10/2023 – 9:59 AM
+8. **Delete Book**:
+  1- The user is asked for the ID number. If the number is correct, the book is deleted and a message that has been deleted is displayed.
+   
+  <img width="236" alt="Screenshot 2023-10-14 180632" src="https://github.com/mahm-8/Project-1/assets/141933812/04b0a1b3-39a8-48f6-bb68-5667ea208142">
 
-## Evaluation Criteria:
 
-The project will be evaluated based on the following criteria:
+9. **Update Book**:
+  Through it you can modify the book values.
+  1-The user enters the book's ID.
+  2-Then specify the key of the value you want to modify.
+  3-Enter the new value and print a message that the modification has been made.
+   
+  <img width="469" alt="Screenshot 2023-10-14 181622" src="https://github.com/mahm-8/Project-1/assets/141933812/63e1e86d-2097-432e-bfa0-13b8bba69499">
 
-- **Completion**: The extent to which the project meets all the minimum requirements, including the extra credit ideas if implemented.
+10. **Purchase**:
+ 1- Enter the book's ID number
+ 2- Enter the number of copies
+ 3- Question: If he wants to buy another book, if he agrees, he enters the book number and number of copies
+ 4- The invoice details are then saved.
+   
+  <img width="374" alt="Screenshot 2023-10-14 183302" src="https://github.com/mahm-8/Project-1/assets/141933812/6e44822f-bbd1-4977-a888-a4f108630023">
 
-- **Quality**: The overall quality of the project, including the coding style, organization, and ease of maintenance. Well-structured and readable code will be favorably evaluated.
+10. **Invoice**: Display a detailed invoice after the purchase, showing the books purchased, their prices, and the total cost.
+    
+   <img width="289" alt="Screenshot 2023-10-14 183315" src="https://github.com/mahm-8/Project-1/assets/141933812/00a250f0-4e37-431c-aefd-869b6de5981c">
 
-- **Use of Programming Concepts**: How well you utilize programming concepts such as classes, abstracts, functions, and other relevant techniques.
+11. **report**:Display a Number of books sold ,total price .
+    
+   <img width="148" alt="Screenshot 2023-10-14 183401" src="https://github.com/mahm-8/Project-1/assets/141933812/e47e41e9-5f99-4926-ab19-18e0ffe36d6b">
 
-## Resources
 
-- [Dart Tutorials](https://dart.dev/tutorials)
 
-Good luck with the project, and feel free to ask any additional questions if needed!
+
