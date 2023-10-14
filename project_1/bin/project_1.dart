@@ -44,43 +44,4 @@ void main() {
         break;
     }
   }
-
-  // Break out of the loop if the user wants to quit.
 }
-
-//   List<ShowBook> libary =[] ;
-// for (Map element in book) {
-//       String nameBook = element['name'];
-//       String idBook = element['id'];
-//       ShowBook product = ShowBook(idBook: idBook, nameBook: nameBook);
-//       libary.add(product);}
-
-// for (var element in libary) {
-//   element.printBook();
-//       }
-//   List<Invoice> data = [];
-//   Invoice report = Invoice(totalSoldBooks: 0, soldBooks: 0);
-//   ShowBook showBook =ShowBook(nameBook: nameBook, idBook: idBook)
-//   bool run = true;
-//   while (run) {
-//     print(
-//         "For books press: 0 \nFor Search press: 1\nFor add book press:  2\nFor delete book press: 3\nFor update book press: 4\nFor buying book press: 5");
-//     String? input = stdin.readLineSync();
-//     if (input == "0") {
-//     showBook;
-//     } else if (input == "1") {
-//       product.p;
-  // }
-  // else if (input == '2') {
-  //   AddBook().addBook(listOfMap);
-  // } else if (input == '3') {
-  //   RemoveBook(listOfMap: libary);
-  // } else if (input == '4') {
-  //   UpdateBook();
-  // } else if (input == '5') {
-  //   Buying(libary);
-  // } else if (input == '6') {
-  //   report.printInvoice();
-  // // }
-  // }
-
